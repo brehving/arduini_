@@ -1,18 +1,14 @@
 #include <Arduino.h>
 
-// put function declarations here:
-int myFunction(int, int);
+const int ledPin = 13;  // Built-in LED on Arduino Uno
 
 void setup() {
-  // put your setup code here, to run once:
-  int result = myFunction(2, 3);
+    pinMode(ledPin, OUTPUT);  // configure LED pin as output
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-}
-
-// put function definitions here:
-int myFunction(int x, int y) {
-  return x + y;
+    digitalWrite(ledPin, HIGH);  // turn LED on
+    delay(500);                  // wait 500 ms
+    digitalWrite(ledPin, LOW);   // turn LED off
+    delay(500);                  // wait 500 ms
 }
