@@ -3,6 +3,10 @@
 		{
 			"name": "test",
 			"path": "test"
+		},
+		{
+			"name": "Alcohol sensor",
+			"path": "Alcohol sensor"
 		}
 	]
 }
